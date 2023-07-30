@@ -1,0 +1,36 @@
+.modal-body {
+    max-height: 60vh;
+    overflow-y: auto;
+    overflow-wrap: break-word;
+}
+
+/* C.css */
+
+.quadro {
+
+    width: 25rem;
+    margin: 10px;
+}
+  
+
+/* C.css */
+
+h1 {
+    /* Estilos para o nome do quadro (h1) */
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  h2 {
+    /* Estilos para o nome do autor (h2) */
+    font-size: 18px;
+    color: #555;
+  }
+  
+  p {
+    /* Estilos para o resto do conteúdo (p) */
+    font-size: 16px;
+    color: #777;
+  }
+  

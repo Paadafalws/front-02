@@ -1,0 +1,74 @@
+/* CaixaComponent.css */
+body {
+  padding: 20px;
+  font-weight: #ffff;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+}
+h1{
+  font-size: 10px;
+  color: #fff;
+ 
+}
+p{
+  color: #fff;
+}
+h3{
+  font-size: 15px;
+  color: #fff;
+
+}
+.Caixa {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Definindo 4 colunas com largura igual */
+  grid-template-areas:
+    "div-01 div-01 div-01 div-01"
+    "div-02 div-03 div-03 div-03"
+    "div-02 div-03 div-03 div-03"
+    "div-11 div-11 div-11 div-11";
+
+  /* Estilos adicionais para a Caixa */
+  width: 100%;
+  background-image: linear-gradient(45deg, #333, #555); /* Gradiente mais escuro */
+  border-radius: 5px;
+}
+.Caixa div {
+
+
+}
+
+.div-01 {
+  grid-area: div-01;
+  height: 80px;
+  width: 100%;
+  background-image: linear-gradient(45deg, #333, #555); /* Gradiente mais escuro */
+}
+
+.div-02 {
+  background-image: linear-gradient(45deg, #333, #555); /* Gradiente mais escuro */
+  grid-area: div-02;
+  height: auto;
+  width: 100%;
+}
+
+/* Estilos para a classe .div-03 */
+.div-03 {
+  grid-area: div-03;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(45deg, #333, #555); /* Gradiente mais escuro */
+  color: #fff; /* Cor do texto branco */
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  font-size: 24px;
+  background-color: #333;
+}
+
+.div-11 {
+  grid-area: div-11;
+  height: 50px;
+  
+}

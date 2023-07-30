@@ -1,0 +1,98 @@
+/* SideBar.css */
+
+.sidebar {
+    width: 90%;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .round-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .imgcont {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .Textos {
+    margin-top: 10px;
+  }
+  
+  .Textos h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .Textos h2 {
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 10px;
+    color: #6c757d;
+  }
+  
+  .Textos h3,
+  .Textos p,
+  .Textos h4,
+  .Textos h5,
+  .Textos h6 {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #212529;
+  }
+  
+  .Textos h3 {
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .Textos h4 {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .Textos h5 {
+    font-size: 19px;
+    color: #212529;
+
+  }
+  
+  .Textos h6 {
+    font-size: 19px;
+    color: #212529;
+
+  }
+  
+  .botao-central {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .botao-central button {
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-items: center;
+  }
+  
+  .botao-central button:hover {
+    background-color: #0056b3;
+  }
+  
