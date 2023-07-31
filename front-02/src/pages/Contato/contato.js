@@ -43,7 +43,7 @@ const Contato = () => {
   const handleSubmit = e => {
     e.preventDefault();
     // Realizar a requisição POST para adicionar a nova tarefa
-    axios.post('http://127.0.0.1:8000/Tarefas/', novaTarefa)
+    axios.post('http://15.229.23.203:8000/Tarefas/', novaTarefa)
       .then(response => {
         setTarefas(prevState => [...prevState, response.data]);
         setNovaTarefa({
@@ -58,7 +58,7 @@ const Contato = () => {
   };
   const handleDelete = (id) => {
     // Realizar a requisição DELETE para remover a tarefa pelo ID
-    axios.delete(`http://127.0.0.1:8000/Tarefas/${id}/`)
+    axios.delete(`http://15.229.23.203:8000/Tarefas/${id}/`)
       .then(response => {
         // Atualizar a lista de tarefas após a remoção
         setTarefas(prevState => prevState.filter(tarefa => tarefa.id !== id));

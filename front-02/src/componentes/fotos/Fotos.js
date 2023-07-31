@@ -14,7 +14,7 @@ function C() {
   
 
   useEffect(() => {
-    axios.get('http://127.0.0.1:8000/Quadros/')
+    axios.get('http://15.229.23.203:8000/Quadros/')
       .then(response => {
         setDados(response.data);
       })
