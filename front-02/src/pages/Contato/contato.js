@@ -21,7 +21,7 @@ const Contato = () => {
 
   useEffect(() => {
     // Realizar a requisição GET para obter a lista de tarefas
-    axios.get('http://127.0.0.1:8000/Tarefas/')
+    axios.get('http://15.229.23.203:8000/Tarefas/')
       .then(response => {
         setTarefas(response.data);
       })
