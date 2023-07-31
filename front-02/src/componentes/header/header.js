@@ -1,24 +1,19 @@
 import React from "react";
 import logo from '../../imgs/logo.png'
 import './header.css'
+
+
 import {
   Nav,
   Navbar,
   NavDropdown,
-  Form,
-  FormControl,
-  Button
 } from "react-bootstrap";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHome,
   faBriefcase,
-  faPaperPlane,
-  faQuestion,
   faImage,
-  faCopy,
-  faTimes
 } from "@fortawesome/free-solid-svg-icons";
 
 function Headers() {
@@ -34,8 +29,11 @@ function Headers() {
     <Navbar.Collapse id="basic-navbar-nav" > 
       <Nav className="mr-auto">
         <Nav.Link href="/"> Home <FontAwesomeIcon icon={faHome} className="mr-2" /></Nav.Link>
-        <Nav.Link href="/about-us">Contact Us <FontAwesomeIcon icon={faBriefcase} className="mr-2" /></Nav.Link>
-        <Nav.Link href="/contact-us">Portfolio  <FontAwesomeIcon icon={faImage} className="mr-2" /></Nav.Link>
+        <Nav.Link href="/contato" >
+         <a Link to='/contatos'>  Contatos/Tarefas <FontAwesomeIcon icon={faBriefcase} className="mr-2" /></a>
+       </Nav.Link>     
+         
+        <Nav.Link href="/curriculo">Portfolio  <FontAwesomeIcon icon={faImage} className="mr-2" /></Nav.Link>
         <NavDropdown title="Redes" id="basic-nav-dropdown"> 
           <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
           <NavDropdown.Item href="https://www.linkedin.com/in/paulo-ricardo-m-camargo-226266148/">

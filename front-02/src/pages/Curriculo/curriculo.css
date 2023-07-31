@@ -20,8 +20,7 @@ h3{
 
 }
 h2{
-  font-size: 15px;
-  color: #ff0000;
+
 }
 h4{
   font-size: 15px;
@@ -91,5 +90,6 @@ h4{
 .div-11 {
   grid-area: div-11;
   height: 50px;
+  background-color: #555;
   
 }

@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from 'react';
 import './sidebar.css'
-import { Nav, Button, Modal  } from "react-bootstrap";
+import { Nav, Button, } from "react-bootstrap";
 import classNames from "classnames";
 import eu from '../../imgs/eu.png'
 import Criar from "../modal/Criar";

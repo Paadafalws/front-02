@@ -2,11 +2,11 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import './App.css'
-import SideBar from './componentes/sidebar/sidebar';
-import Headers from './componentes/header/header';
-import Footer from './componentes/footer/footer';
-import Foto from './componentes/fotos/Fotos'
+import './curriculo.css'
+import SideBar from '../../componentes/sidebar/sidebar';
+import Headers from '../../componentes/header/header';
+import Footer from '../../componentes/footer/footer';
+
 
 
 const App = () => {
@@ -33,7 +33,7 @@ const App = () => {
     </div>  
     <div className="div-03">
       
-      <Foto/>
+
     </div>  
 
     <div className="div-11"><Footer/></div>   

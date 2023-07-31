@@ -6,6 +6,7 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
 function Criar() {
+
   const [showForm, setShowForm] = useState(false);
   const [formData, setFormData] = useState({
     Nome: '',
@@ -27,6 +28,7 @@ function Criar() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    
   
     const formDataToSend = new FormData();
     formDataToSend.append('Quadrofoto', formData.Quadrofoto);
