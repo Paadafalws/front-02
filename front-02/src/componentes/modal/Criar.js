@@ -4,6 +4,7 @@ import FormLabel from 'react-bootstrap/FormLabel';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import './modal.css';
 
 function Criar() {
 

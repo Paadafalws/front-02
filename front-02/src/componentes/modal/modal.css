@@ -1,3 +1,64 @@
-p{
-    color: black;
-}
+/* Estilização para o formulário */
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .form-container h2 {
+    margin-bottom: 20px;
+    color: #333; /* Cor do texto */
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+    color: #333; /* Cor do texto */
+  }
+  
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #333; /* Cor do texto */
+  }
+  
+  .form-group button {
+    margin-top: 10px;
+    color: #fff; /* Cor do texto */
+  }
+  
+  /* Estilização para o botão de criar */
+  .button-container {
+    text-align: center;
+  }
+  
+  .button-container button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .button-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Estilização para o botão de cancelar */
+  .button-container .btn-secondary {
+    background-color: #6c757d;
+    margin-left: 10px;
+  }
+  
+  .button-container .btn-secondary:hover {
+    background-color: #5a6268;
+  }
+  
