@@ -9,7 +9,7 @@ import Footer from '../../componentes/footer/footer';
 
 
 
-const App = () => {
+const Curriculo = () => {
   return (
   <>
   <div className="Caixa">
@@ -42,4 +42,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Curriculo;
