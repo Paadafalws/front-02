@@ -21,7 +21,9 @@ const Contato = () => {
 
   useEffect(() => {
     // Realizar a requisição GET para obter a lista de tarefas
-    axios.get('http://15.229.23.203:8000/Tarefas/')
+    // http://127.0.0.1:8000/
+    // http://15.229.23.203:8000/Tarefas/
+    axios.get('http://127.0.0.1:8000/Tarefas/')
       .then(response => {
         setTarefas(response.data);
       })
@@ -43,7 +45,7 @@ const Contato = () => {
   const handleSubmit = e => {
     e.preventDefault();
     // Realizar a requisição POST para adicionar a nova tarefa
-    axios.post('http://15.229.23.203:8000/Tarefas/', novaTarefa)
+    axios.post('http://127.0.0.1:8000/Tarefas/', novaTarefa)
       .then(response => {
         setTarefas(prevState => [...prevState, response.data]);
         setNovaTarefa({
@@ -91,6 +93,7 @@ const Contato = () => {
         <div className="div-03">
           <Table  variant="dark" striped bordered hover>
             <thead>
+              
               <tr>
                 <th>#</th>
                 <th>Nome</th>
@@ -112,8 +115,9 @@ const Contato = () => {
                 </tr>
               ))}
             </tbody>
+            
           </Table>
-          <Form onSubmit={handleSubmit}>
+                          <Form onSubmit={handleSubmit}>
             <Form.Group controlId="nome">
               <Form.Label>Nome:</Form.Label>
               <Form.Control
@@ -148,6 +152,7 @@ const Contato = () => {
               Adicionar Tarefa
             </Button>
           </Form>
+          
         </div>  
         <div className="div-11">
           <Footer/>
