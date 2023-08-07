@@ -3,14 +3,14 @@ import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import './contato.css'
+
 import SideBar from '../../componentes/sidebar/sidebar';
 import Headers from '../../componentes/header/header';
 import Footer from '../../componentes/footer/footer';
 import Table from 'react-bootstrap/Table';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-
+import './contato.css'
 const Contato = () => {
   const [tarefas, setTarefas] = useState([]);
   const [novaTarefa, setNovaTarefa] = useState({
@@ -23,7 +23,7 @@ const Contato = () => {
     // Realizar a requisição GET para obter a lista de tarefas
     // http://127.0.0.1:8000/
     // http://15.229.23.203:8000/Tarefas/
-    axios.get('http://127.0.0.1:8000/Tarefas/')
+    axios.get('http://15.229.23.203:8000/Tarefas/')
       .then(response => {
         setTarefas(response.data);
       })
@@ -45,7 +45,7 @@ const Contato = () => {
   const handleSubmit = e => {
     e.preventDefault();
     // Realizar a requisição POST para adicionar a nova tarefa
-    axios.post('http://127.0.0.1:8000/Tarefas/', novaTarefa)
+    axios.post('http://15.229.23.203:8000/Tarefas/', novaTarefa)
       .then(response => {
         setTarefas(prevState => [...prevState, response.data]);
         setNovaTarefa({
@@ -76,6 +76,7 @@ const Contato = () => {
         <div className="div-01">
           <Headers/>
         </div>  
+        
         <div className="div-02">
           <SideBar/>
           <div className='minibox'> 
@@ -90,7 +91,9 @@ const Contato = () => {
             </p>
           </div>
         </div>  
+        
         <div className="div-03">
+          
           <Table  variant="dark" striped bordered hover>
             <thead>
               
@@ -117,7 +120,9 @@ const Contato = () => {
             </tbody>
             
           </Table>
-                          <Form onSubmit={handleSubmit}>
+          <div> 
+          <h6> Adicionar Tarefas </h6>
+        <Form onSubmit={handleSubmit} className='box'>
             <Form.Group controlId="nome">
               <Form.Label>Nome:</Form.Label>
               <Form.Control
@@ -138,22 +143,13 @@ const Contato = () => {
               />
             </Form.Group>
 
-            <Form.Group controlId="feita">
-              <Form.Check
-                type="switch"
-                label="Feita"
-                name="feita"
-                checked={novaTarefa.feita}
-                onChange={handleChange}
-              />
-            </Form.Group>
-
-            <Button variant="primary" type="submit">
+            <Button variant="primary" type="submit" className="boxbotao">
               Adicionar Tarefa
             </Button>
           </Form>
-          
+        </div>
         </div>  
+
         <div className="div-11">
           <Footer/>
         </div>   

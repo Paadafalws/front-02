@@ -7,6 +7,7 @@ import SideBar from './componentes/sidebar/sidebar';
 import Headers from './componentes/header/header';
 import Footer from './componentes/footer/footer';
 import Foto from './componentes/fotos/Fotos'
+import ChatGPT from './componentes/chatgpt/ChatGPT';
 
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
     </div>  
     <div className="div-02">
       <SideBar/>
+ 
       <div className='minibox'> 
           <h3> Curiosidades :</h3>
           <h4>Este site será o meu registro como filósofo, programador e pensador. Será apenas uma apresentação da minha mente.</h4>
@@ -29,10 +31,11 @@ const App = () => {
         <a href="mailto:paulo.moraes1@uscsonline.com.br">paulo.moraes1@uscsonline.com.br
         </a>
         </p>
+
       </div>
     </div>  
     <div className="div-03">
-      
+    <ChatGPT></ChatGPT>
       <Foto/>
     </div>  
 

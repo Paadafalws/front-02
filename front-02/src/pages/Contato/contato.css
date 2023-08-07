@@ -31,10 +31,7 @@ body {
     background-image: linear-gradient(45deg, #333, #555); /* Gradiente mais escuro */
     border-radius: 5px;
   }
-  .Caixa div {
   
-  
-  }
   
   .div-01 {
     grid-area: div-01;
@@ -52,23 +49,57 @@ body {
     margin-left: 5%;
     margin-top: 5%;
   }
+  h6{
+    font-size: 30px;
+    color: #ffffff;
+    margin: 2px;
+   
+  }
   
   /* Estilos para a classe .div-03 */
   .div-03 {
+
     grid-area: div-03;
     padding: 25px;
     display: flex;
-    flex-wrap: wrap-reverse;
     justify-content: center;
-    align-items: center;
-    background-image: linear-gradient(45deg, #333, #555); /* Gradiente mais escuro */
-    color: #757575; /* Cor do texto branco */
+    align-items: left;
+    background-image: linear-gradient(45deg, #302c2c, #3f3737); /* Gradiente mais escuro */
+    color: #ffffff; /* Cor do texto branco */
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     font-size: 24px;
     background-color: #333;
+    
+  }
+  .box {
+
+    grid-area: div-03;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    background-image: linear-gradient(45deg, #302c2c, #3f3737); /* Gradiente mais escuro */
+    color: #ffffff; /* Cor do texto branco */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 24px;
+    background-color: #333;
+    
   }
   
+  .boxbotao{
+    margin-top: 7%;
+    width: 20%;
+    height: 10%;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 10px;
+    background-color: #333;
+
+  }
+
+
   .div-11 {
     grid-area: div-11;
     height: 50px;
