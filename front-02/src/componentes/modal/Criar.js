@@ -41,7 +41,7 @@ function Criar() {
     formDataToSend.append('descricao', formData.descricao);
   
     // Realizar o POST na API usando o axios com o objeto FormData
-    axios.post('http://15.229.23.203:8000/Quadros/', formDataToSend)
+    axios.post('http://127.0.0.1:8000/Quadros/', formDataToSend)
       .then(response => {
         console.log('Quadro criado com sucesso:', response.data);
         setShowForm(false);
